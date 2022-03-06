@@ -13,19 +13,19 @@ class Student{
 		this.Student_age=Student_age;
 		this.Student_roll_number=Student_roll_number;
 	}
-	
+
 	//Method to update Student_name
-	void Update_name(String New_name){
+	void updateName(String New_name){
 		Student_name=New_name;
 	}
-	
+
 	//Method to update Student_age
-	void Update_age(int New_age) {
+	void updateAge(int New_age) {
 		Student_age=New_age;
 	}
-	
-	//Returns the Student_name,Student_age and Student_roll_number as a String format. 
-	String get_details(){
+
+	//Returns the Student_name,Student_age and Student_roll_number as a String format.
+	String getDetails(){
 		return "Name: "+Student_name+",Age: "+Integer.toString(Student_age)+",Roll: "+Long.toString(Student_roll_number);
 	}
 	

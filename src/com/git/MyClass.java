@@ -25,7 +25,7 @@ class Student{
 	}
 	
 	//Returns the Student_name,Student_age and Student_roll_number as a String format. 
-	String To_String(){
+	String get_details(){
 		return "Name: "+Student_name+",Age: "+Integer.toString(Student_age)+",Roll: "+Long.toString(Student_roll_number);
 	}
 	

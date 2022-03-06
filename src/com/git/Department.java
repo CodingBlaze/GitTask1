@@ -7,7 +7,7 @@ class Department{
     long Department_Students;
 
     //Initializing Instance variables using explicit constructor
-    Student(String Department_Name,String Department_Dean,long Department_Students)
+    Department(String Department_Name,String Department_Dean,long Department_Students)
     {
         this.Department_Name=Department_Name;
         this.Department_Dean=Department_Dean;

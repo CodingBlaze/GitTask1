@@ -4,33 +4,33 @@ class Department{
     // Declaring Department_Name, Department_Dean, Department_Students
     String Department_Name;
     String Department_Dean;
-    long Department_Students;
+    List<Student> Department_Students=new LinkedList<Student>();
 
     //Initializing Instance variables using explicit constructor
-    Department(String Department_Name,String Department_Dean,long Department_Students)
+    Department(String Department_Name,String Department_Dean)
     {
         this.Department_Name=Department_Name;
         this.Department_Dean=Department_Dean;
-        this.Department_Students=Department_Students;
     }
-
     //Method to update Department_name
     void updateName(String New_name){
-        Department_name=New_name;
+        Department_Name=New_name;
     }
 
     //Method to update Department_Dean
     void updateDean(String New_Dean) {
         Department_Dean=New_Dean;
     }
-    //Method to update Department_Students
-    void updateStudents(long New_Students) {
-        Department_Students=New_Students;
+    //Method to add Students to Department_Students List
+    void addStudent(Student student_Object) {
+        Department_Students.add(student_Object);
     }
 
-    //Returns the Department_Name, Department_Dean, Department_Students as a String format.
-    String getDetails(){
-        return "Name: "+Department_Name+",Dean: "+Department_Dean+",Students: "+Department_Students;
+    //Prints the details of Students within this Department.
+    void getStudentDetails(){
+        for(Student student_Object:Department_Students) {
+        	System.out.println(student_Object.getDetails());
+        }
     }
 
 }

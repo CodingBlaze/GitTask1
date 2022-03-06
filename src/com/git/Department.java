@@ -1,5 +1,8 @@
 package com.git;
 
+import java.util.LinkedList;
+import java.util.List;
+
 class Department{
     // Declaring Department_Name, Department_Dean, Department_Students
     String Department_Name;

@@ -13,6 +13,8 @@ public class MainClass {
 		
 		Student Suresh = new Student("Suresh",21,104);
 		
+		Student Ajay = new Student("Ajay",22,105);
+		
 		System.out.println(Vikash.getDetails());
 	}
 

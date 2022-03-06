@@ -20,11 +20,11 @@ class Department{
     }
 
     //Method to update Department_Dean
-    void updateDean(int New_Dean) {
+    void updateDean(String New_Dean) {
         Department_Dean=New_Dean;
     }
     //Method to update Department_Students
-    void updateStudents(int New_Students) {
+    void updateStudents(long New_Students) {
         Department_Students=New_Students;
     }
 

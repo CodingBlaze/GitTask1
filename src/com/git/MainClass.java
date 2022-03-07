@@ -16,6 +16,26 @@ public class MainClass {
 		Student Ajay = new Student("Ajay",22,105);
 		
 		System.out.println(Vikash.getDetails());
-	}
+		
+		// creating department objects
+		Department Physics = new Department("CSE","Suresh Babu");
+		
+		Department History = new Department("ECE","Vinay Gopal");
+		
+		// adding students to departments
+		Physics.addStudent(Vikash);
+		
+		Physics.addStudent(Uday);
+		
+		Physics.addStudent(Suresh);
+		
+		History.addStudent(Sailesh);
+		
+		History.addStudent(Ajay);
+		
+		History.getStudentDetails();
+		
+		Physics.getStudentDetails();
+		}
 
 }
